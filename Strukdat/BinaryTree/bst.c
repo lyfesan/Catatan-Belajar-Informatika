@@ -3,7 +3,7 @@
 #include<stdbool.h>
 
 typedef unsigned long long ull;
-
+ 
 int cnt=0;
 bool y=0;
 
