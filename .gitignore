@@ -1,4 +1,4 @@
 .vscode
-Strukdat/Graph
-*.exe
+#Strukdat/Graph
 !*.*
+*.exe
