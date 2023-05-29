@@ -65,7 +65,7 @@ int main(){
     for(I=0; I<x; I++){
         R=Q;
         printf("Vertex %c ....", Q->info);
-        for(J=0; J<=4;J++){
+        for(J=0; J<x;J++){
             if(A[I][J]!=0){
                 P = (simpul*) malloc(sizeof(simpul));
                 P->info = A[I][J];
