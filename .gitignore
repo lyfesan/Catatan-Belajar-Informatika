@@ -5,3 +5,4 @@ PemrogramanWeb
 *.exe
 *.in
 *.ans
+.vscode/settings.json
