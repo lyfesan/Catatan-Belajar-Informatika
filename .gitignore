@@ -1,4 +1,5 @@
-.vscode
+PemrogramanWeb
+.vscode/*
 #Strukdat/Graph
 !*.*
 *.exe
