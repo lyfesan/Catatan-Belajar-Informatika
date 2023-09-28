@@ -82,6 +82,7 @@ int main(){
         printf("1. Insert depan\n2. Insert belakang\n3. Tampilkan data di linkedlist\n4. Keluar\n");
         printf("Masukkan pilihan : ");
 		scanf("%d",&c);
+        y='y';
         if(c==1){
             while(y!='n'){
                 printf("Input nim : ");

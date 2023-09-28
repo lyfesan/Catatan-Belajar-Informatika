@@ -26,7 +26,6 @@ int partition(int arr[], int l, int h){
 
 void quickSort(int a[], int l, int r){
     if(l>=r) return;
-    //int p = a[(l+r)/2-1];
     int x = partition(a,l,r);
     quickSort(a,l,x);
     quickSort(a,x+1,r);

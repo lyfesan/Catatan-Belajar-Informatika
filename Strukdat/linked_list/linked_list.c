@@ -12,27 +12,26 @@ void init(Mahasiswa **p){
     *p=NULL;
 }
 
-Mahasiswa *alokasi(int nim, char nama[]){
+Mahasiswa *alokasi(/*int num, char name[]*/){
         Mahasiswa *P;
         P = (Mahasiswa*) malloc(sizeof(Mahasiswa));
         if(P!=NULL){
             P->next=NULL;
-            //P->nim=nim;
-            //strcpy(P->nama,nama);
+            //P->nim=num;
+            //strcpy(P->nama,name);
         }
         return (P);
 }
 
 void Add(Mahasiswa **p){
-    //int nim, char nama[100];
     *p=alokasi();
     scanf("%d %s",&(*p)->nim, (*p)->nama);
     printf("%d %s\n",(*p)->nim, (*p)->nama);
 }
 
 Mahasiswa *adding(Mahasiswa *p,int nim, char nama[]){
-    p=alokasi(int nim, char name[]);
-    printf("Ini ada di fungsi add %d %s\n", (p)->nim)
+    p=alokasi(/*int nim, char name[]*/);
+    printf("Ini ada di fungsi add %d %s\n", (p)->nim);
     return p;
 }
 /*
@@ -59,7 +58,7 @@ int main(){
     
     Mahasiswa *now = head;
     while(now!=NULL){
-        printf("%d %s\n", (*now)->nim, (*now)->nama);
+        printf("%d %s\n", now->nim, now->nama);
         now = now->next;
     }
     //print_list(&head);

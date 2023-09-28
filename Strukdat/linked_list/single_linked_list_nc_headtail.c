@@ -41,7 +41,7 @@ void insertDepan(int databaru, char s[]){
 
 void insertBelakang(int databaru, char s[]){
 	TNode *baru,*bantu;
-	baru = (TNode*) malloc(sizeof(TNode));;
+	baru = (TNode*) malloc(sizeof(TNode));
 	baru->data = databaru;
 	strcpy(baru->nama,s);
     //baru->s = sbaru;
@@ -123,6 +123,7 @@ int main(){
         printf("1. Insert depan\n2. Insert belakang\n3. Hapus depan\n4. Hapus belakang\n5. Tampilkan data di linkedlist\n6. Keluar\n");
         printf("Masukkan pilihan : ");
 		scanf("%d",&c);
+		y='y';
         if(c==1){
             while(y!='n'){
                 printf("Input nim : ");

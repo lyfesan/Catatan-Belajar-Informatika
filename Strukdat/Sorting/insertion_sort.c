@@ -3,7 +3,7 @@
 void swap(int x, int y, int a[]){
     a[x]+=a[y];a[y]=a[x]-a[y];a[x]-=a[y];
 }
-
+ 
 void insertionSort(int a[], int n){
     for(int i = 1;i<n;i++){
         for(int j = i;j > 0 && a[j] < a[j-1];j--){
