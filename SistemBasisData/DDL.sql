@@ -4,7 +4,7 @@ NRP : 5025221193
 Create MySQL database based on PDM from last assignment
 */
 
---Create database
+-- Create database
 CREATE DATABASE invoice;
 USE invoice;
 
