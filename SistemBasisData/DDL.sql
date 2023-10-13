@@ -8,7 +8,7 @@ Create MySQL database based on PDM from last assignment
 CREATE DATABASE invoice;
 USE invoice;
 
---Create tables
+-- Create tables
 CREATE TABLE pelanggan(
 	P_NO CHAR(5) PRIMARY KEY,
 	P_NAMA VARCHAR(60) NOT NULL,
