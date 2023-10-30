@@ -1,8 +1,11 @@
 PemrogramanWeb
 .vscode/*
 #Strukdat/Graph
+*
 !*.*
+!*/
 *.exe
 *.in
 *.ans
 .vscode/settings.json
+*.o
