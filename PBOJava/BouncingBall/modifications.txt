@@ -1,0 +1,3 @@
+1. Make Ball Area Panel Resizable
+2. Add KeyEvent to resize the radius of ball using arrow up and arrow down
+3. Make the color of ball random by randomize the index of given array of color using rand
