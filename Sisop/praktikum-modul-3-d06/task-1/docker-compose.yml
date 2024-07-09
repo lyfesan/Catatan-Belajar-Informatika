@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  tank:
+    image: cchoirun/joki-ml-bang:v1
+    command: ./ayamgoreng TANK
+    scale: 6
+
+  assassin:
+    image: cchoirun/joki-ml-bang:v1
+    command: ./ayamgoreng ASSASSIN
+    scale: 6
+
+  fighter:
+    image: cchoirun/joki-ml-bang:v1
+    command: ./ayamgoreng FIGHTER
+    scale: 6
+
+  marksman:
+    image: cchoirun/joki-ml-bang:v1
+    command: ./ayamgoreng MM
+    scale: 6
+
+  mage:
+    image: cchoirun/joki-ml-bang:v1
+    command: ./ayamgoreng MAGE
+    scale: 6
+
+  support:
+    image: cchoirun/joki-ml-bang:v1
+    command: ./ayamgoreng SUPPORT
+    scale: 6

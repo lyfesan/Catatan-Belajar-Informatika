@@ -1,0 +1,9 @@
+# bochsrc.txt
+megs: 32          # Jumlah RAM (32 MB)
+romimage: file=/usr/share/bochs/BIOS-bochs-latest  # Path ke BIOS Bochs
+vgaromimage: file=/usr/share/bochs/VGABIOS-lgpl-latest # Path ke VGA BIOS Bochs
+boot: floppy       # Boot dari floppy disk
+floppya: 1_44="bin/floppy.img", status=inserted  # Path ke floppy image dan statusnya
+log: bochsout.txt  # File log untuk Bochs
+clock: sync=realtime, time0=local  # Sinkronisasi waktu dengan waktu lokal
+mouse: enabled=1   # Aktifkan dukungan mouse

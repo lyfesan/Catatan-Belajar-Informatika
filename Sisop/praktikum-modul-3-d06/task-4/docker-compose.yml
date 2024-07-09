@@ -1,0 +1,43 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "9090:9090"
+    environment:
+      - DB_HOST=db
+      - DB_DATABASE=laravel
+      - DB_USERNAME=root
+      - DB_PASSWORD=password
+    depends_on:
+      - db
+    networks:
+      - Shani-net
+
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: laravel
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - Shani-net
+
+  laravel:
+    build: .
+    environment:
+      - DB_HOST=db
+      - DB_DATABASE=laravel
+      - DB_USERNAME=root
+      - DB_PASSWORD=password
+    depends_on:
+      - db
+    networks:
+      - Shani-net
+
+volumes:
+  db-data:
+
+networks:
+  Shani-net:
